@@ -1,19 +1,15 @@
 # Document Management System
-Where you can create documents and attach them to tags belonging to specific categories created by the admin.
-As a user, you can comment on these documents or categories, and you can also download the documents
-In addition, you can follow categories, and this will keep you fully informed of this category
-By sending an email to your account
-And through notifications prepared in Firebase to enjoy the real-time feature.
-In addition to calculating the number of visitors to documents and categories.
+This system allows users to manage documents effectively by creating them, attaching them to tags within designated categories set up by administrators. Users have the capability to add comments to both documents and categories, as well as download the documents directly.
 
+Additionally, users can subscribe to categories, ensuring they receive updates about the category through email notifications. These notifications leverage Firebase to provide real-time functionality. The system also tracks visitor counts for both documents and categories, offering insights into engagement levels.
 
 ## Installation
 
-You Must run the migrations and seeders:
+Run Migrations and Seeders: Execute the following command to apply database schema changes and populate the database with initial data.
 ```bash
 php artisan migrate --seed
 ```
-The queue must also be running
+Start the Queue Worker: To process background tasks efficiently, start the queue worker with this command.
 ```bash
 php artisan queue:work
 ```
